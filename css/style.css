@@ -34,6 +34,7 @@ a{
 /*************** Header ***********/
 header{
     height: 79px;
+    margin: 0 -50px;
     display: flex;
     justify-content: space-between;
 }
@@ -42,7 +43,6 @@ header img{
     width: 161px;
     padding: 30px 50px;
 }
-
 nav{
     height: 35px;
     width: 344px;
@@ -71,13 +71,60 @@ nav ul li:nth-child(2) a{
 /***************** Main ***********/
 
 /*** title-forms-filter ***********/
-/* .fa-magnifying-glass{
-    display: hidden;
-} */
+
+.title-forms-and-filter{
+    height: 281px;
+    margin: 35px 0;
+}
+.main-title h1{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.forms-and-filter form{
+    height: 49px;
+    width: 377px;
+    margin: 35px 0;
+    display: flex;
+}
+.icone-location{
+    height: 100%;
+    width: 50px;
+    position: relative;
+    text-align: center;
+    background-color: var(--main-bg-color);
+    border-radius: 10px 0 0 10px; /*top-left -> sens horaire*/
+}
+.fa-location-dot{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: black;
+}
+form .search{
+    height: 100%;
+    width: 204px;
+    border: none;
+}
+
+form .submit{
+    height: 100%;
+    width: 132px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+.magnifying-glass{
+    display: none;
+}
+/************ Filter********/
 .filter ul{
     list-style-type: none;
     display: flex;
 }
+
 .div-info{
     display: flex;
     align-items: center;

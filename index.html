@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body> 
     <div class="main-container">
         <header> 
             <img src="./images/logo/Booki.png" alt="logo"> 
@@ -32,11 +32,11 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </section>
                 <section class="forms-and-filter">
-                    <form action="#">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" name="inputValue" placeholder="Marseille, France">
-                        <input type="submit" value="Rechercher">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <form method="POST" action="#">
+                        <div class="icone-location"><i class="fa-solid fa-location-dot"></i></div>
+                        <input class="search" type="search" name="inputValue" placeholder="Marseille, France">
+                        <input class="submit" type="submit" value="Rechercher">
+                        <div class="magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></div>
                     </form>
                     <div class="filter">
                         <h3>Filtres</h3>
