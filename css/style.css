@@ -34,7 +34,9 @@ a{
     text-decoration: none;
     color:black;
 }
-
+ ul{
+    list-style-type: none;
+ }
 /*************** Header ***********/
 header{
     height: 79px;
@@ -114,6 +116,7 @@ form .search{
     width: 204px;
     border: none;
 }
+
 form .search[type="search"], form .search::placeholder{
     font-size: 18px;
     font-weight: 700;
@@ -355,6 +358,21 @@ form .submit[type="submit"]{
 
 .activites .card-title{
     margin: 20px 19px;
+}
+
+
+/******************footer*********************/
+footer{
+    padding:  20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: var(--main-bg-color);
+}
+footer h4{
+    font-size: 18px;
+}
+footer li{
+    margin-top: 15px;
 }
 
 
