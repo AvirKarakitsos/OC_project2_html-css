@@ -92,7 +92,7 @@ nav ul li:nth-child(1) :visited{
 .forms-and-filter form{
     height: 49px;
     margin: 35px 0;
-    display: flex;
+    display: inline-flex;
 }
 
 .icone-location{
@@ -101,18 +101,11 @@ nav ul li:nth-child(1) :visited{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative;
-    text-align: center; */
     background-color: var(--main-bg-color);
     border-radius: 10px 0 0 10px; /*top-left -> sens horaire*/
 }
 
 .fa-location-dot{
-    /* position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%); */
     color: black;
 }
 
@@ -123,6 +116,7 @@ form .search{
 }
 
 form .search::placeholder{
+    width: 100%;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -194,24 +188,17 @@ form .submit[type="submit"]{
 }
 
 .icone-info{
-    /* position: relative; */
     min-height: 24px;
     min-width: 24px;
     margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     border-radius: 50%;
     border: 1px solid var(--border);
 }
 
 .fa-info{
-    /* position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%); */
     font-size: 10px;
 }
 
@@ -267,31 +254,29 @@ form .submit[type="submit"]{
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
+    row-gap: 30px;
 }
+
 .hebergements-cards a{
     width: 30%;
 }
 
-.hebergements-cards .card{
-    display: flex;
-    flex-direction: column;
-}
-
 .hebergements-cards img{
     height: 124px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
 .hebergements-cards .card-content{
-    padding: 15px;
+    padding: 10px;
 }
 
 .hebergements-cards .card-subtitle{
     margin: 8px 0;
 }
 
-.hebergements p{
+.hebergements .afficher-plus{
     font-size: 18px;
     font-weight: 700;
 }
@@ -341,6 +326,34 @@ form .submit[type="submit"]{
 }
 
 
+/********** Activites***********/
+.activites{
+    margin: 35px 0;
+    padding: 30px;
+}
+.activites h2{
+    margin-bottom: 30px;
+}
+
+.activites-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites-cards a{
+    width: 23%;
+}
+
+.activites img{
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites .card-title{
+    margin: 20px 19px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
