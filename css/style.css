@@ -114,13 +114,15 @@ form .search{
     width: 204px;
     border: none;
 }
+form .search[type="search"], form .search::placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
 
 form .search::placeholder{
     width: 100%;
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    color: black;
 }
 
 form .submit{
