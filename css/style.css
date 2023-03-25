@@ -61,7 +61,6 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: end;
-    list-style-type: none;
 }
 
 nav ul li:nth-child(1){
@@ -81,7 +80,6 @@ nav ul li:nth-child(1) :visited{
 /*** title-forms-filter ***********/
 
 .title-forms-and-filter{
-    height: 281px;
     margin: 35px 0;
 }
 
@@ -148,26 +146,29 @@ form .submit[type="submit"]{
 
 /**Filter**/
 .filter{
-    width: 758px;
+    max-width: 750px;
     margin-bottom: 37.5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid rebeccapurple;
 }
 .filter p{
     font-size: 18px;
     font-weight: 700;
 }
 .filter ul{
-    height: 50px;
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    list-style-type: none;
+    align-items: flex-start;
+    gap: 30px 5px;
+    border: 1px solid green;
 }
 
 .filter ul li{
-    height: 100%;
+    height: 50px;
     padding: 4px 19px;
     display: flex;
     justify-content: space-around;
@@ -368,9 +369,11 @@ footer{
     grid-template-columns: repeat(3,1fr);
     background-color: var(--main-bg-color);
 }
+
 footer h4{
     font-size: 18px;
 }
+
 footer li{
     margin-top: 15px;
 }
@@ -381,6 +384,19 @@ footer li{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filter{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter > p{
+        margin-bottom: 20px;
+    }
+
+    .filter ul{
+        width: 100%;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -411,9 +427,37 @@ footer li{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites img{
+        height: 200px;
+    }
+
+    .activites .card-title{
+        margin: 25.5px 19px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header{
+        flex-direction: column;
+    }
+    .forms-and-filter .submit{
+        display: none;
+    }
+
+    .forms-and-filter .magnifying-glass{
+        display: block;
+        height: 100%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--main-color);
+        border-radius: 0 10px 10px 0;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
 }
