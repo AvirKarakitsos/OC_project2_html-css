@@ -39,13 +39,14 @@ a{
  }
 /*************** Header ***********/
 header{
-    height: 79px;
+    /* height: 79px; */
     margin: 0 -50px;
     display: flex;
     justify-content: space-between;
 }
 
 header img{
+    height: 79px;
     width: 161px;
     padding: 30px 50px;
 }
@@ -151,7 +152,6 @@ form .submit[type="submit"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rebeccapurple;
 }
 .filter p{
     font-size: 18px;
@@ -164,7 +164,6 @@ form .submit[type="submit"]{
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px 5px;
-    border: 1px solid green;
 }
 
 .filter ul li{
@@ -441,11 +440,18 @@ footer li{
 @media (max-width: 767.98px) {
     header{
         flex-direction: column;
+        align-items: center;
+    }
+    header li:nth-child(1){
+        border-top: 0 none;
+        border-bottom: 2px solid var(--main-color);
     }
     .forms-and-filter .submit{
         display: none;
     }
-
+    .magnifying-glass .fa-magnifying-glass{
+        color: white;
+    }
     .forms-and-filter .magnifying-glass{
         display: block;
         height: 100%;
@@ -459,5 +465,11 @@ footer li{
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        padding: 30px;
+        row-gap: 50px;
     }
 }
