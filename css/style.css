@@ -97,13 +97,12 @@ nav ul li:nth-child(1) :visited{
 }
 
 .icone-location{
-    height: 100%;
     width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--main-bg-color);
-    border-radius: 10px 0 0 10px; /*top-left -> sens horaire*/
+    border-radius: 10px 0 0 10px;   /*top-left -> sens horaire*/
 }
 
 .fa-location-dot{
@@ -111,7 +110,6 @@ nav ul li:nth-child(1) :visited{
 }
 
 form .search{
-    height: 100%;
     width: 204px;
     border: none;
 }
@@ -128,8 +126,7 @@ form .search::placeholder{
 }
 
 form .submit{
-    height: 100%;
-    width: 132px;
+    padding: 14px 16px;
     color: white;
     background-color: var(--main-color);
     border: none;
@@ -141,7 +138,7 @@ form .submit[type="submit"]{
     font-weight: 700;
 }
 
-.magnifying-glass{
+.btn-submit{
     display: none;
 }
 
@@ -454,18 +451,18 @@ footer li{
         display: none;
     }
     
-    .forms-and-filter .magnifying-glass{
-        display: block;
-        height: 100%;
+    .btn-submit{
         width: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         background-color: var(--main-color);
+        border: none;
         border-radius: 10px;
     }
 
-    .magnifying-glass .fa-magnifying-glass{
+    .fa-magnifying-glass{
         color: white;
     }
 
