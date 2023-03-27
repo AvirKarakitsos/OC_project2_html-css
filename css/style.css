@@ -83,7 +83,7 @@ nav ul li:nth-child(1) :visited{
 /***************** Main ***********/
 
 /*** title-forms-filter ***********/
-
+/** aside **/
 .title-forms-and-filter{
     margin: 35px 0;
 }
@@ -159,7 +159,6 @@ form .submit[type="submit"]{
     font-weight: 700;
 }
 .filter ul{
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -173,8 +172,6 @@ form .submit[type="submit"]{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 17px;
-    font-weight: 700;
     cursor: pointer;
     border: 1px solid var(--border);
     border-radius: 30px;
@@ -186,6 +183,11 @@ form .submit[type="submit"]{
 
 .filter ul li i{
     margin-right: 10px;
+}
+
+.filter ul li p{
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .div-info{
@@ -208,7 +210,7 @@ form .submit[type="submit"]{
     font-size: 10px;
 }
 
-/* hebergements-and-populaires*****/
+/** hebergements-and-populaires **/
 
 .section-title {
     margin: 0;
@@ -228,6 +230,10 @@ form .submit[type="submit"]{
 
 .card-title {
     font-size: 16px;
+}
+
+.card-subtitle{
+    font-size: 14px;
 }
 
 .euro {
@@ -286,6 +292,7 @@ form .submit[type="submit"]{
     font-size: 18px;
     font-weight: 700;
 }
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -330,7 +337,6 @@ form .submit[type="submit"]{
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
 
 /********** Activites***********/
 .activites{
@@ -439,7 +445,11 @@ footer li{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    body{
+        padding: 0; 
+    }
     header{
+        margin: 0;
         flex-direction: column;
         align-items: center;
     }
@@ -449,6 +459,10 @@ footer li{
     nav ul li:nth-child(1){
         border-top: 0 none;
         border-bottom: 2px solid var(--main-color);
+    }
+
+    aside {
+        padding: 20px;
     }
 
     .forms-and-filter .submit{
@@ -470,10 +484,19 @@ footer li{
         color: white;
     }
 
+    .filter ul li p{
+        font-size: 14px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
 
+    .hebergements-and-populaires section {
+        padding: 0 20px;
+        border-radius: 0;
+    }
+    
     .hebergements-and-populaires .hebergements{
         background-color: white;
     }
@@ -483,7 +506,7 @@ footer li{
     }
 
     .populaires-cards .card, .hebergements-cards a, .activites-cards a{
-        min-width: 315px;
+        width: 335px;
     }
 
     .activites{
