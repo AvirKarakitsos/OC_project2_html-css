@@ -119,7 +119,8 @@ form .search{
     border: none;
 }
 
-form .search[type="search"], form .search::placeholder{
+form .search[type="search"]{
+    padding: 0 5px;
     font-size: 18px;
     font-weight: 700;
     color: black;
@@ -127,7 +128,14 @@ form .search[type="search"], form .search::placeholder{
 
 form .search::placeholder{
     width: 100%;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
+    color: black;
+}
+
+form .search:focus{
+    outline: none;
 }
 
 form .submit{
@@ -171,7 +179,6 @@ form .submit[type="submit"]{
     height: 50px;
     padding: 4px 19px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     cursor: pointer;
     border: 1px solid var(--border);
@@ -265,14 +272,13 @@ form .submit[type="submit"]{
 
 .hebergements-cards{
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .hebergements-cards a{
-    width: 30%;
+    width: 100%;
 }
 
 .hebergements-cards img{
@@ -522,6 +528,12 @@ footer li{
 
     .populaires-cards, .activites-cards {
         flex-direction: column;
+    }
+
+    .hebergements-cards{
+        margin: 15px 0;
+        grid-template-columns: 1fr;
+        gap: 15px 0;
     }
 
     .populaires-cards .card, .hebergements-cards a, .activites-cards a{
