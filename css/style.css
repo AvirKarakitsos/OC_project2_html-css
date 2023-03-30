@@ -490,6 +490,10 @@ footer li{
         padding: 0 20px;
     }
 
+    .forms-and-filter .search{
+        width: 80%;
+    }
+
     .forms-and-filter .submit{
         display: none;
     }
@@ -511,10 +515,12 @@ footer li{
 
     .filter .filter-list li{
         width: 45%;
+        max-width: 150px;
         justify-content: center;
     }
     .filter .filter-list li p{
         font-size: 14px;
+        overflow: hidden;
     }
 
     .hebergements-and-populaires {
