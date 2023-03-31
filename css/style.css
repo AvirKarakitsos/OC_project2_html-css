@@ -79,6 +79,11 @@ nav .nav-list li{
 
 nav .nav-list li:nth-child(1){
     border-top: 2px solid var(--main-color);
+    color:var(--main-color);
+}
+
+nav .nav-list li:nth-child(1) a{
+    color:var(--main-color);
 }
 
 nav .nav-list li:nth-child(1) :visited{
@@ -168,12 +173,11 @@ form .submit[type="submit"]{
     font-size: 17px;
     font-weight: 700;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 1.8em .3em;
 }
 
 .filter .filter-list li{
-    height: 50px;
+    height: 2.9em;
     padding: .2em 1.1em;
     display: flex;
     align-items: center;
@@ -416,9 +420,7 @@ footer li{
 
     .filter .filter-list{
         width: 100%;
-    }
-    .filter .filter-list li{
-        font-size: 16px;
+        font-size: 16px
     }
 
     .hebergements-and-populaires {
@@ -514,10 +516,13 @@ footer li{
         color: white;
     }
 
+    .filter .filter-list{
+        font-size: 14px;
+    }
+
     .filter .filter-list li{
         width: 40%;
-        max-width: 150px;
-        font-size: 14px;
+        max-width: 180px;
     }
 
 /*********** Main phone*******************/
