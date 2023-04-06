@@ -32,6 +32,11 @@ body {
     padding: 0 50px;
 }
 
+img{
+    display: block;
+    object-fit: cover;
+}
+
 a{
     text-decoration: none;
     color:black;
@@ -93,10 +98,6 @@ main{
 }
 
 /****Aside ************/
-
-aside{
-    margin-bottom: 35px;
-}
 
 h1{
     font-size: 22px;
@@ -237,10 +238,6 @@ h1{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
-    object-fit: cover;
-}
-
 .card-title {
     font-size: 16px;
 }
@@ -259,6 +256,7 @@ h1{
 
 /*** Hebergements And Populaires ***/
 .hebergements-and-populaires {
+    margin: 35px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -279,13 +277,12 @@ h1{
     margin: 30px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
     gap: 30px;
 }
 
 .hebergements-cards article a, .activites-cards article a {
     display: block;
-    height: 100%;
-    width: 100%;
 }
 
 .hebergements-cards img{
@@ -367,6 +364,8 @@ h1{
 .activites-cards article{
     width: 23%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    border-radius: 20px;
+    background-color: white;
 }
 
 .activites-cards img{
@@ -428,7 +427,6 @@ footer li{
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -454,7 +452,7 @@ footer li{
     }
 
     .activites .card-title{
-        margin: 25.5px 19px;
+        margin: 16px 19px;
     }
 }
 
@@ -465,7 +463,7 @@ footer li{
     }
 
     header{
-        margin: 0 0 30px 0;
+        margin: 0;
         flex-direction: column;
         align-items: center;
     }
@@ -487,6 +485,10 @@ footer li{
     }
 
 /*********** Main phone**************/
+    main{
+        margin: 30px 0 35px 0;
+    }
+
     aside {
         padding: 0 20px;
     }
@@ -534,15 +536,15 @@ footer li{
 
     .hebergements-and-populaires section {
         max-width: 400px;
-        margin: 0;
         border-radius: 0;
     }
+
     .hebergements-and-populaires .populaires{
-        margin: 0;
         padding: 30px 20px;
     }
+
     .hebergements-and-populaires .hebergements{
-        margin: 15px 0 35px 0;
+        margin-top: 15px;
         padding: 20px;
         background-color: white;
     }
@@ -557,17 +559,19 @@ footer li{
         flex-direction: column;
     }
 
-    .populaires-cards .card, .hebergements-cards a, .activites-cards a{
+    .populaires-cards .card{
         width: 100%;
     }
 
     .activites{
         max-width: 400px;
         margin: 0 auto;
+        padding: 30px;
     }
 
     .activites-cards article{
         width: 100%;
+        margin-top: 15px;
     }
 
     .activites-cards img{
@@ -575,7 +579,7 @@ footer li{
     }
 
     .activites .card-title{
-        margin: 20px 19px;
+        margin-bottom: 15px;
     }
 
     /**************Footer phone************/
