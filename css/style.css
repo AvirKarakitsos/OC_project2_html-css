@@ -171,6 +171,7 @@ h1{
     justify-content: space-between;
     align-items: center;
 }
+
 .filter > p{
     font-size: 18px;
     font-weight: 700;
@@ -315,10 +316,16 @@ h1{
     align-items: center;
 }
 
+.populaires-cards{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
 .populaires-cards .card {
     max-width: 335px;
     display: flex;
-    margin-top: 33px;
 }
 
 .populaires-cards img {
@@ -401,19 +408,15 @@ footer li{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .filter{
-        width: 88%;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .filter > p{     /*uniquement <p>Filtres</p>*/
-        margin-bottom: 20px;
-    }
-
     .filter-list{
         width: 100%;
+        margin-top: 20px;
         font-size: 16px
     }
 
@@ -426,11 +429,12 @@ footer li{
     }
 
     .populaires {
+        margin-top: 50px;
         width: 100%;
     }
 
     .populaires-cards {
-        display: flex;
+        margin-top: 20px;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -439,13 +443,13 @@ footer li{
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    /*  .populaires-cards .card-title {
         font-size: 14px;
     }
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
-    }
+    } */
 
     .activites img{
         height: 200px;
@@ -457,7 +461,7 @@ footer li{
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
     .main-container{
         padding: 0;
     }
@@ -555,8 +559,14 @@ footer li{
         gap: 15px 0;
     }
 
-    .populaires-cards, .activites-cards {
+    .populaires{
+        margin: 0;
+    }
+
+    .populaires-cards {
+        margin-top: 15px;
         flex-direction: column;
+        row-gap: 15px;
     }
 
     .populaires-cards .card{
@@ -569,17 +579,18 @@ footer li{
         padding: 30px;
     }
 
+    .activites-cards{
+        margin-top: 30px;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
     .activites-cards article{
         width: 100%;
-        margin-top: 15px;
     }
 
     .activites-cards img{
         height: 141px;
-    }
-
-    .activites .card-title{
-        margin-bottom: 15px;
     }
 
     /**************Footer phone************/
