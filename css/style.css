@@ -324,7 +324,6 @@ h1{
 }
 
 .popular-cards .card {
-    max-width: 335px;
     display: flex;
 }
 
