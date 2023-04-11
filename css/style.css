@@ -393,13 +393,13 @@ footer{
     grid-template-columns: repeat(3,1fr);
     background-color: var(--main-bg-color);
 }
-
+footer ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
 footer h4{
     font-size: 18px;
-}
-
-footer li{
-    margin-top: 15px;
 }
 
 
