@@ -56,6 +56,10 @@ a{
     font-weight: 700;
  }
 
+.block{
+    display: block;
+ }
+
 /*************** Header ***********/
 header{
     margin: 0 -50px;
@@ -252,7 +256,7 @@ main{
     font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
 }
 
@@ -281,10 +285,6 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     gap: 30px;
-}
-
-.accomodation-cards article a, .activities-cards article a {
-    display: block;
 }
 
 .accomodation-cards img{
@@ -458,7 +458,7 @@ footer .flex-c{
         align-items: center;
     }
 
-    nav{
+    .nav{
         width: 100%;
         padding: 0;
     }
