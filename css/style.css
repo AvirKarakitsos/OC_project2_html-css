@@ -17,10 +17,6 @@
     scroll-behavior: smooth;
 }
 
-.fa-solid{
-    color: var(--main-color);
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -30,6 +26,10 @@ body {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
+}
+
+.fa-solid{
+    color: var(--main-color);
 }
 
 img{
@@ -54,11 +54,7 @@ a{
 .font-18-700{
     font-size: 18px;
     font-weight: 700;
- }
-
-.block{
-    display: block;
- }
+}
 
 /*************** Header ***********/
 header{
@@ -246,6 +242,10 @@ main{
 .card-title {
     font-size: 16px;
 }
+
+.block{
+    display: block;
+ }
 
 /**** Accomodation And Popular ****/
 
