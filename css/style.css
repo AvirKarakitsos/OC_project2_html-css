@@ -104,7 +104,6 @@ header{
     color:var(--main-color);
 }
 
-
 /***************** Main ***********/
 
 main{
@@ -115,13 +114,11 @@ main{
     font-size: 22px;
 }
 
-/****Aside ************/
+/**** Aside ****/
 
 .title-forms-and-filter .section-title{
     margin-bottom: 8px;
 }
-
-/*** title-forms-filter ***********/
 
 /**form**/
 .form-search{
@@ -155,6 +152,7 @@ main{
     font-weight: 700;
     text-align: center;
     color: black;
+    opacity: 1; /* Firefox */
 }
 
 .search:focus{
@@ -167,6 +165,7 @@ main{
     background-color: var(--main-color);
     border: none;
     border-radius: 0 10px 10px 0;
+    cursor: pointer;
 }
 
 .submit[type="submit"]{
@@ -178,7 +177,7 @@ main{
     display: none;
 }
 
-/**Filter**/
+/**filter**/
 .filter{
     max-width: 750px;
     margin-bottom: 37.5px;
@@ -202,9 +201,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;  /*phone media query*/
-    cursor: pointer;
     border: 1px solid var(--border);
     border-radius: 30px;
+    cursor: default;
 }
 
 .filter-list li:hover{
@@ -235,7 +234,7 @@ main{
     font-size: 10px;
 }
 
-/** accomodation-and-popular **/
+/**** Accomodation - Popular - Activities ****/
 
 .card {
     background-color: white;
@@ -247,6 +246,8 @@ main{
 .card-title {
     font-size: 16px;
 }
+
+/**** Accomodation And Popular ****/
 
 .card-subtitle{
     font-size: 14px;
@@ -260,7 +261,6 @@ main{
     color: var(--main-bg-color)
 }
 
-/*** accomodation And popular ***/
 .accomodation-and-popular {
     margin: 35px 0;
     display: flex;
@@ -274,7 +274,7 @@ main{
     box-sizing: border-box;
 }
 
-/****** accomodation **/
+/** accomodation **/
 .accomodation {
     width: 65%;
 }
@@ -298,7 +298,7 @@ main{
     row-gap: 8px;
 }
 
-/**** popular ****/
+/** popular **/
 .popular {
     width: 32%;
 }
@@ -341,15 +341,11 @@ main{
     row-gap: 4px;
 }
 
-.popular-cards .card-subtitle {
-    margin: 0;
-}
-
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
 
-/***** activities *****/
+/**** Activities ****/
 .activities{
     padding: 30px;
 }
@@ -360,11 +356,9 @@ main{
     justify-content: space-between;
 }
 
-.activities-cards article{
+.activities-cards .card{
     width: 23%;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px;
-    background-color: white;
+    padding: 0;
 }
 
 .activities-cards img{
@@ -377,7 +371,6 @@ main{
 .activities-cards .card-title{
     margin: 20px 19px;
 }
-
 
 /******************Footer*********************/
 footer{
@@ -452,6 +445,7 @@ footer .flex-c{
         padding: 0;
     }
 
+/*********** Header phone**************/
     header{
         margin: 0;
         flex-direction: column;
@@ -571,7 +565,7 @@ footer .flex-c{
         row-gap: 15px;
     }
 
-    .activities-cards article{
+    .activities-cards .card{
         width: 100%;
     }
 
@@ -579,10 +573,12 @@ footer .flex-c{
         height: 141px;
     }
 
-    /**************Footer phone************/
+/**************Footer phone************/
     footer{
-        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
         padding: 30px;
+        grid-template-columns: 1fr;
         row-gap: 50px;
     }
 }
