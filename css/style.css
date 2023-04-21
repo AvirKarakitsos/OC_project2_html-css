@@ -44,7 +44,7 @@ a{
 
 .nobullet{
     list-style-type: none;
- }
+}
 
 .flex-c{
     display: flex;
@@ -245,7 +245,8 @@ main{
 
 .block{
     display: block;
- }
+    height: 100%;
+}
 
 /**** Accomodation And Popular ****/
 
